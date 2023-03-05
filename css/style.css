@@ -1,0 +1,281 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(128, 159, 247);
+}
+
+/* GRID CONTAINER */
+.containerGrid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px auto auto 160px;
+    gap: 5px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.containerGrid>* {
+    border: solid 1px black;
+    color: white;
+}
+
+/* GRID ITEM HEADER */
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;    
+}
+
+.menuHamburguesa{
+    display: none;  
+}
+
+.logo {
+    width: 14%;
+    height: 100%;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav ul li {
+    list-style: none;
+    padding-left: 15%;
+    padding-right: 15px;
+}
+
+/* GRID ITEM SECTION1*/
+.section1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.section1 .banner {
+    width: 100%;
+    height: 350px;
+    background-image: url("../img/levantacopa.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    background-color: white;
+    font-family: coopperplate;
+    text-align: center;
+    font-size: 40px;
+    color: blue;
+    padding-top: 2px;
+    height: auto;
+}
+
+/* GRID ITEM SECTION2*/
+.section2 {
+    background-color: white;
+    display: flex;
+}
+
+#cuadro1 {
+    border: solid 1px black;
+    padding: 2% 2% 2% 2%;
+    color: black;
+}
+
+#cuadro1 h2 {
+    padding-bottom: 10px;
+    font-size: 35px;
+}
+
+#cuadro1 p {
+    font-size: 100%;
+    padding-bottom: 10px;
+}
+
+#cuadro2 {
+    padding-top: 2px;
+    padding-left: 2px;
+    border: solid 1px black;
+}
+
+/* GRID ITEM FOOTER*/
+footer {
+    display: flex;
+    background-color: rgb(165, 164, 164);
+}
+
+.fo {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1%;
+    width: 25%;
+    margin-left: 2%;
+}
+
+footer .titulo {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 1%;
+}
+
+.newsletter {
+    padding-top: 1%;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    padding-top: 5%;
+}
+
+.redes {
+    width: 25%;
+    padding-top: 1%;
+    margin-left: 10%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+footer li {
+    padding-top: 3%;
+    list-style: none;
+}
+
+/* TABLET menor 1024px */
+@media screen and (max-width: 1023px) {
+
+    .containerGrid {
+        grid-template-rows: 100px auto auto 150px;
+    }
+
+    .nav ul li {
+        list-style: none;
+        padding-left: 5%;
+        padding-right: 1%;
+    }
+
+    .section1 .banner {
+        width: 100%;
+        height: 309px;
+    }
+
+    h1 {
+        background-color: white;
+        font-family: coopperplate;
+        text-align: center;
+        font-size: 40px;
+        color: blue;
+        padding-top: 2px;
+    }
+
+    .section2 {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #cuadro2 {
+        padding-top: 2px;
+        padding-left: 2px;
+        text-align: center;
+    }
+
+    .fo {
+        font-size: 90%;
+        border-right: 1px solid black;
+        padding-right: 3px;
+    }
+
+    .fo ul li {
+        padding-top: 10%;
+    }
+
+    .newsletter {
+        font-size: 90%;
+        border-right: 1px solid black;
+    }
+
+    .form {
+        padding-top: 5%;
+    }
+
+    .redes {
+        font-size: 90%;
+    }
+
+    .redes li {
+        font-size: 90%;
+        padding-top: 8%;
+    }
+
+}
+
+/* MOBILE menor 768px */
+@media screen and (max-width: 768px) {
+
+    .nav ul{
+        display: none;
+    }
+
+    .logo{
+        padding-left: 2px;
+        height: 100%;
+    }
+
+    .menuHamburguesa{
+        display: block;
+        color: black; 
+        height: 100%; 
+        width: 5%;
+        margin-right: 10px;     
+    }
+
+    .section1 .banner {
+        width: 100%;
+        height: 269px;
+    }
+}
+/* PARTIDOS */
+.row>div {
+    border: 1px solid black;
+    padding: 2% 2% 2% 2%;
+}
+
+.card-img-top{
+     height: 205px;
+}
+
+/* NOTICIAS */
+.noticias{
+    height: 300px;
+    width: 1024px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    border: black solid;
+    background-color: azure;
+    display: flex;
+}
+
+.noticias .imgnoti{
+    height: 294px;
+    width: 300px;
+}
+
+.noticias .noti{
+    color: black;
+    width: 700px;
+    vertical-align: top;
+    padding-top: 30px;
+    padding-left: 20px;
+}
