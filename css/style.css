@@ -12,7 +12,7 @@ body {
 .containerGrid {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 100px auto auto 160px;
+    grid-template-rows: 100px auto auto auto;
     gap: 5px;
     width: 80%;
     margin-left: auto;
@@ -156,7 +156,7 @@ footer li {
 @media screen and (max-width: 1023px) {
 
     .containerGrid {
-        grid-template-rows: 100px auto auto 150px;
+        grid-template-rows: 100px auto auto auto;
     }
 
     .nav ul li {
