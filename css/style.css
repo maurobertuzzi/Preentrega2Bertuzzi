@@ -117,7 +117,6 @@ footer {
     flex-direction: column;
     padding-top: 1%;
     width: 25%;
-    margin-left: 2%;
 }
 
 footer .titulo {
@@ -134,14 +133,9 @@ footer .titulo {
     flex-direction: column;
 }
 
-.form {
-    padding-top: 5%;
-}
-
 .redes {
     width: 25%;
     padding-top: 1%;
-    margin-left: 10%;
     color: black;
     display: flex;
     flex-direction: column;
@@ -191,10 +185,17 @@ footer li {
         text-align: center;
     }
 
+    footer{
+        font-size: large;
+        display: flex;
+        flex-direction: column;
+    }
+
     .fo {
         font-size: 90%;
-        border-right: 1px solid black;
         padding-right: 3px;
+        align-items: center;
+        width: 100%
     }
 
     .fo ul li {
@@ -202,16 +203,22 @@ footer li {
     }
 
     .newsletter {
+        margin-top: 20px;
         font-size: 90%;
-        border-right: 1px solid black;
+        align-items: center;
+        width: 100%
     }
 
     .form {
-        padding-top: 5%;
+        align-items: center;
+        width: 100%
     }
 
     .redes {
+        margin-top: 20px;
         font-size: 90%;
+        align-items: center;
+        width: 100%
     }
 
     .redes li {
@@ -246,6 +253,8 @@ footer li {
         height: 269px;
     }
 }
+
+
 /* PARTIDOS */
 .row>div {
     border: 1px solid black;
