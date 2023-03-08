@@ -264,7 +264,7 @@ footer li {
 }
 
 
-/* PARTIDOS */
+/* SECCION PARTIDOS */
 .row>div {
     border: 1px solid black;
     padding: 2% 2% 2% 2%;
@@ -274,7 +274,7 @@ footer li {
     height: 205px;
 }
 
-/* NOTICIAS */
+/* SECCION NOTICIAS -sin Hacer aun - */
 .noticias {
     height: 300px;
     width: 1024px;
