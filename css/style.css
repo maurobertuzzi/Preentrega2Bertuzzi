@@ -30,11 +30,20 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
-    align-items: center;    
+    align-items: center;
 }
 
-.menuHamburguesa{
-    display: none;  
+.menuHamburguesa {
+    display: none;
+}
+
+.enlaces:hover {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.enlaces:visited {
+    background-color: black;
 }
 
 .logo {
@@ -185,7 +194,7 @@ footer li {
         text-align: center;
     }
 
-    footer{
+    footer {
         font-size: large;
         display: flex;
         flex-direction: column;
@@ -231,21 +240,21 @@ footer li {
 /* MOBILE menor 768px */
 @media screen and (max-width: 768px) {
 
-    .nav ul{
+    .nav ul {
         display: none;
     }
 
-    .logo{
+    .logo {
         padding-left: 2px;
         height: 100%;
     }
 
-    .menuHamburguesa{
+    .menuHamburguesa {
         display: block;
-        color: black; 
-        height: 100%; 
+        color: black;
+        height: 100%;
         width: 5%;
-        margin-right: 10px;     
+        margin-right: 10px;
     }
 
     .section1 .banner {
@@ -261,12 +270,12 @@ footer li {
     padding: 2% 2% 2% 2%;
 }
 
-.card-img-top{
-     height: 205px;
+.card-img-top {
+    height: 205px;
 }
 
 /* NOTICIAS */
-.noticias{
+.noticias {
     height: 300px;
     width: 1024px;
     font-family: Arial, Helvetica, sans-serif;
@@ -276,12 +285,12 @@ footer li {
     display: flex;
 }
 
-.noticias .imgnoti{
+.noticias .imgnoti {
     height: 294px;
     width: 300px;
 }
 
-.noticias .noti{
+.noticias .noti {
     color: black;
     width: 700px;
     vertical-align: top;
