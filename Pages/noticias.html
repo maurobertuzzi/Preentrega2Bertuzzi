@@ -5,89 +5,150 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon"
-    href="https://logodownload.org/wp-content/uploads/2016/11/argentina-national-football-team-logo-1-1.png" />
-  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="../styles/css/style.css">
   <title>NOTICIAS</title>
 </head>
 
 <body>
-  <!--GRID CONTAINER-->
-  <div class="containerGrid">
-    <!--GRID ITEM HEADER-->
-    <header>
-      <a href="./index.html"><img class="logo"
-          src="http://d3ugyf2ht6aenh.cloudfront.net/stores/001/915/482/products/sin-titulo-41-3bf2cc62a11570291816728642996805-640-0.webp"
-          alt="logo afa"></a>
-      <img class="menuHamburguesa" src="./img/bars-solid.svg" alt="Menu Hamburguesa">
-      <nav class="nav">
-        <ul>
-          <li> <a href="../index.html">INICIO</a></li>
-          <li> <a href="../Pages/partidos.html">PARTIDOS</a></li>
-          <li> <a href="../Pages/noticias.html">NOTICIAS</a></li>
-          <li> <a href="../Pages/blog.html">BLOG</a></li>
-          <li> <a href="../Pages/contacto.html">CONTACTO</a></li>
-        </ul>
-      </nav>
-    </header>
-<!--MAIN-->
-<main>
-  <h1>NOTICIAS DE LOS JUGADORES</h1>
-  <div class="noticias">
-      <img class="imgnoti" src="../img/img4.jpg" alt="Di Maria">
-          <p class="noti">
-              DI MARIA CAMPEON DI MARIA CAMPEONDI MARIA CAMPEONDI MARIA CAMPEONDI MARIA CAMPEONDI MARIA CAMPEONDI
-              MARIA CAMPEONDI MARIA CAMPEONDI MARIA CAMPEONDI MARIA CAMPEONDI MARIA CAMPEONDI MARIA CAMPEONDI MARIA
-              CAMPEONDI MARIA CAMPEONDI MARIA CAMPEONDI MARIA CAMPEONDI MARIA CAMPEONDI MARIA CAMPEONDI MARIA
-              CAMPEONDI MARIA CAMPEONDI MARIA CAMPEONDI MARIA CAMPEONDI MARIA CAMPEONDI MARIA CAMPEONDI MARIA
-              CAMPEONDI MARIA CAMPEONDI MARIA CAMPEONDI MARIA CAMPEONDI MARIA CAMPEONDI MARIA CAMPEONDI MARIA
-              EONDI MARIA CAMPEONDI MARIA CAMPEON
-          </p>
-  </div>
-  <div class="noticias">
-      <img class="imgnoti" src="../img/img5.jpg" alt="Di Maria">
-          <p class="noti">
-          LAUTARO CAMPEON LAUTARO CAMPEONLAUTARO CAMPEONLAUTARO CAMPEONLAUTARO CAMPEONLAUTARO CAMPEONLAUTARO
-          CAMPEONLAUTARO CAMPEONLAUTARO CAMPEONLAUTARO CAMPEONLAUTARO CAMPEONLAUTARO CAMPEONLAUTARO CAMPEONLAUTARO
-          CAMPEONLAUTARO CAMPEONLAUTARO CAMPEONLAUTARO CAMPEONLAUTARO CAMPEONLAUTARO CAMPEONLAUTARO CAMPEONLAUTARO
-          CAMPEONLAUTARO CAMPEONLAUTARO CAMPEONLAUTARO CAMPEONLAUTARO CAMPEONLAUTARO CAMPEONLAUTARO CAMPEONLAUTARO
-          CAMPEONLAUTARO CAMPEONLAUTARO CAMPEONLAUTARO CAMPEONLAUTARO CAMPEONLAUTARO CAMPEONLAUTARO CAMPEONLAUTARO
-          NLAUTARO CAMPEONLAUTARO CAMPEONLAUTARO CAMPEONLAUTARO CAMPEON
-          </p>
-  </div>
-</main>
-    <!--FOOTER-->
-    <footer>
-      <div class="fo">
-        <p class="titulo">LINKS DE INTERÉS</p>
-        <ul>
-          <li><a target="_blank" href="https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/qatar2022">FIFA</a></li>
-          <li><a target="_blank" href="https://www.promiedos.com.ar/mundial">PROMIEDO</a></li>
-          <li><a target="_blank" href="https://www.tycsports.com/mundial/fixture.html">TYC SPORTS</a></li>
-          <li><a target="_blank" href="https://es.wikipedia.org/wiki/Catar">WIKI CATAR</a></li>
-        </ul>
-      </div>
-      <div class="newsletter">
-        <div class="titleNews">
-          <h2>RECIBE NUESTRAS NOTICIAS TODOS LOS MESES</h2>
-        </div>
-        <div class="form">
-          <label for="email">EMAIL:</label>
-          <input type="email" id="email" required>
-          <button type="submit">ENVIAR</button>
+  <header>
+    <a href="./index.html"><img class="logo"
+        src="http://d3ugyf2ht6aenh.cloudfront.net/stores/001/915/482/products/sin-titulo-41-3bf2cc62a11570291816728642996805-640-0.webp"
+        alt="logo afa"></a>
+    <img class="menuHamburguesa" src="./img/bars-solid.svg" alt="Menu Hamburguesa">
+    <nav class="nav">
+      <ul>
+        <li> <a href="../index.html">INICIO</a></li>
+        <li> <a href="../Pages/partidos.html">PARTIDOS</a></li>
+        <li> <a href="../Pages/noticias.html">NOTICIAS</a></li>
+        <li> <a href="../Pages/blog.html">BLOG</a></li>
+        <li> <a href="../Pages/contacto.html">CONTACTO</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!--MAIN-->
+  <main>
+    <h1>NOTICIAS DE LOS JUGADORES</h1>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="https://www.cronista.com/files/image/497/497882/63a06962c2bdd.png" class="card-img-top" alt="Enzo Fernandez">
+          <div class="card-body">
+            <h5 class="card-title">Con Enzo Fernández a la cabeza, cuánto aumentó el valor de los jugadores más jóvenes de la Selección tras el Mundial</h5>
+            <p class="card-text">Con Enzo Fernández a la cabeza, ganador del premio al Mejor Jugador Joven del certamen con 21 años, Julián Álvarez, de 22 años; Alexis McAllister, de 23; Lisandro Martínez, Cristian "Cuti" Romero y Nahuel Molina, los tres de 24 años de edad; vieron su valor aumentar hasta un 600% gracias a la Copa del Mundo.</p>
+          </div>
         </div>
       </div>
-      <div class="redes">
-        <p class="titulo">INFO DE CONTACTO</p>
-        <ul>
-          <li><a href="https://www.facebbok.com">FACEBOOK</a></li>
-          <li><a href="https://www.instagram.com">INSTAGRAM</a></li>
-          <li><a href="mailto:argentinacampeon@gmail.com">argentinacampeon@gmail.com</a></li>
-          <li><span>3243424323</span>
-        </ul>
+      <div class="col">
+        <div class="card">
+          <img src="https://www.cronista.com/files/image/499/499197/63a5b05b132dd.jpg" class="card-img-top" alt="Dibu Martinez">
+          <div class="card-body">
+            <h5 class="card-title">Dibu Martínez reveló sus "trucos" en los penales contra Francia con una frase elocuente</h5>
+            <p class="card-text">En los penales me hago fuerte y sé que por eso me respetan. Me lo han dicho los rivales. Cuando atajo el primer penal (a Kingsley Coman) en la final, sabía que el siguiente chico que debía patear (Aurelien Tchouameni) iba a estar muy nervioso y le traté de jugar mentalmente, tirándole la pelota lejos, hablándole. Y la tiró afuera, se cagó todo".</p>
+          </div>
+        </div>
       </div>
-  </div>
+      <div class="col">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+  <!--FOOTER-->
+  <footer>
+    <div class="fo">
+      <p class="titulo">LINKS DE INTERÉS</p>
+      <ul>
+        <li><a target="_blank" href="https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/qatar2022">FIFA</a></li>
+        <li><a target="_blank" href="https://www.promiedos.com.ar/mundial">PROMIEDO</a></li>
+        <li><a target="_blank" href="https://www.tycsports.com/mundial/fixture.html">TYC SPORTS</a></li>
+        <li><a target="_blank" href="https://es.wikipedia.org/wiki/Catar">WIKI CATAR</a></li>
+      </ul>
+    </div>
+    <div class="newsletter">
+      <div class="titleNews">
+        <h2>RECIBE NUESTRAS NOTICIAS TODOS LOS MESES</h2>
+      </div>
+      <div class="form">
+        <label for="email">EMAIL:</label>
+        <input type="email" id="email" required>
+        <button type="submit">ENVIAR</button>
+      </div>
+    </div>
+    <div class="redes">
+      <p class="titulo">INFO DE CONTACTO</p>
+      <ul>
+        <li><a href="https://www.facebbok.com">FACEBOOK</a></li>
+        <li><a href="https://www.instagram.com">INSTAGRAM</a></li>
+        <li><a href="mailto:argentinacampeon@gmail.com">argentinacampeon@gmail.com</a></li>
+        <li><span>3243424323</span>
+      </ul>
+    </div>
+    </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
