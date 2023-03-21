@@ -8,6 +8,54 @@ body {
   background-color: rgb(128, 159, 247);
 }
 
+/* GRID CONTAINER */
+.containerGrid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 100px auto auto auto;
+  gap: 5px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.containerGrid > * {
+  border: solid 1px black;
+  color: white;
+}
+
+/* GRID ITEM HEADER */
+header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+header .enlaces:hover {
+  background-color: cornflowerblue;
+  color: white;
+}
+header .enlaces:visited {
+  background-color: black;
+}
+header .logo {
+  width: 14%;
+  height: 100%;
+}
+header .nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+header .nav ul li {
+  list-style: none;
+  padding-left: 15%;
+  padding-right: 15px;
+}
+header .menuHamburguesa {
+  display: none;
+}
+
 /* TABLET menor 1024px */
 @media screen and (max-width: 1023px) {
   .containerGrid {
@@ -15,6 +63,20 @@ body {
   }
   .nav ul li {
     list-style: none;
+  }
+  .nav ul li .menuHamburguesa {
+    display: block;
+    color: black;
+    height: 100%;
+    width: 5%;
+    margin-right: 10px;
+  }
+  .menuHamburguesa {
+    display: block;
+    color: black;
+    height: 100%;
+    width: 5%;
+    margin-right: 10px;
   }
   .section1 .banner {
     width: 100%;
@@ -63,12 +125,14 @@ body {
     width: 100%;
   }
   footer .redes {
+    margin-left: 3%;
     margin-top: 20px;
     font-size: 90%;
     align-items: center;
     width: 100%;
   }
   footer .redes li {
+    margin-left: 15%;
     font-size: 90%;
     padding-top: 8%;
   }
@@ -94,54 +158,6 @@ body {
     height: 269px;
   }
 }
-/* GRID CONTAINER */
-.containerGrid {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 100px auto auto auto;
-  gap: 5px;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.containerGrid > * {
-  border: solid 1px black;
-  color: white;
-}
-
-/* GRID ITEM HEADER */
-header {
-  background-color: white;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  align-items: center;
-}
-header .menuHamburguesa {
-  display: none;
-}
-header .enlaces:hover {
-  background-color: cornflowerblue;
-  color: white;
-}
-header .enlaces:visited {
-  background-color: black;
-}
-header .logo {
-  width: 14%;
-  height: 100%;
-}
-header .nav ul {
-  display: flex;
-  justify-content: flex-end;
-}
-header .nav ul li {
-  list-style: none;
-  padding-left: 15%;
-  padding-right: 15px;
-}
-
 /* GRID ITEM SECTION1*/
 .section1 {
   display: flex;
@@ -217,6 +233,12 @@ h2 {
 .form-check .form-check-input {
   float: center;
   margin-left: -1.5em;
+}
+
+.boton {
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 5%;
 }
 
 /* GRID ITEM FOOTER*/

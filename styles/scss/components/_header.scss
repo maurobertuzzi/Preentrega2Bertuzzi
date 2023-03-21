@@ -6,10 +6,6 @@ header {
     flex-wrap: nowrap;
     align-items: center;
 
-    .menuHamburguesa {
-        display: none;
-    }
-
     .enlaces:hover {
         background-color: cornflowerblue;
         color: white;
@@ -26,7 +22,7 @@ header {
 
     .nav ul {
         display: flex;
-        justify-content: flex-end;   
+        justify-content: flex-end;
     }
 
     .nav ul li {
@@ -35,4 +31,7 @@ header {
         padding-right: 15px;
     }
 
+    .menuHamburguesa {
+        display: none;
+    }
 }
