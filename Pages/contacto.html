@@ -5,92 +5,128 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="https://logodownload.org/wp-content/uploads/2016/11/argentina-national-football-team-logo-1-1.png" />
-  <link rel="short icon" href=" ">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/x-icon"
+    href="https://logodownload.org/wp-content/uploads/2016/11/argentina-national-football-team-logo-1-1.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="../styles/css/style.css">
   <title>CONTACTO</title>
 </head>
 
 <body>
-  <!-- HEADER -->
+  <!--HEADER-->
   <header>
-    <nav>
-      <img
+    <a href="../index.html"><img class="logo"
         src="http://d3ugyf2ht6aenh.cloudfront.net/stores/001/915/482/products/sin-titulo-41-3bf2cc62a11570291816728642996805-640-0.webp"
-        alt="logo afa">
+        alt="logo afa"></a>
+    <img class="menuHamburguesa" src="./img/bars-solid.svg" alt="Menu Hamburguesa">
+    <nav class="nav">
       <ul>
         <li> <a href="../index.html">INICIO</a></li>
-        <li> <a href="./partidos.html">PARTIDOS</a></li>
-        <li> <a href="./noticias.html">NOTICIAS</a></li>
-        <li> <a href="./blog.html">BLOG</a></li>
-        <li> <a href="./contacto.html">CONTACTO</a></li>
+        <li> <a href="../Pages/partidos.html">PARTIDOS</a></li>
+        <li> <a href="../Pages/noticias.html">NOTICIAS</a></li>
+        <li> <a href="../Pages/blog.html">BLOG</a></li>
+        <li> <a href="../Pages/contacto.html">CONTACTO</a></li>
       </ul>
     </nav>
-  </header>
-  <div class="clearfix"></div>
   </header>
 
   <!--MAIN-->
   <h1>CONTACTO</h1>
   <div>
-    <form action="">
-      <fieldset class="datosPersonales">
-        <legend>Datos Personales</legend>
-        <label class="label" for="nombre"> NOMBRE:</label>
-        <input type="text" id="nombre" required>
-        <label class="label" for="apellido">APELLIDO:</label>
-        <input type="text" id="apellido" required>
-        <p class="label" >ESTADO CIVIL:
-          <label class="label" for="casado">Casado</label>
-          <input type="radio" name="condicion" id="casado">
-          <label class="label" for="soltero">Soltero</label>
-          <input type="radio" name="condicion" id="soltero">
-          <label class="label" for="viudo">Viudo</label>
-          <input type="radio" name="condicion" value="viudo" id="viudo">
-        </p>
-        <label class="label" for="email">EMAIL:</label>
-        <input type="email" id="email" required>
-        <label class="label" for="telefono">TELEFONO</label>
-        <input type="number" id="telefono">
-      </fieldset>
-      <fieldset>
-        <legend>Dejenos su opinión</legend>
-        <label for="comentario">COMENTARIO</label>
-        <textarea name="comentario" id="comentario" cols="100" rows="10"></textarea>
-      </fieldset>
-     <div class="boton">
-        <button type="submit">ENVIAR</button>
-        <button type="reset">LIMPIAR</button>
+    <div class="row">
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
       </div>
     </div>
-  </form>
-  <footer>
-    <div class="fo">
-      <p class="titulo">Links de interes</p>
-      <ul>
-        <li><a href="https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/qatar2022">FIFA</a></li>
-        <li><a href="https://www.promiedos.com.ar/mundial">PROMIEDO</a></li>
-        <li><a href="https://www.tycsports.com/mundial/fixture.html">TYC SPORTS</a></li>
-        <li><a href="https://es.wikipedia.org/wiki/Catar">WIKI CATAR</a></li>
-      </ul>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+      <label class="form-check-label" for="flexRadioDefault1">
+        SOLTERO
+      </label>
     </div>
-    <div class="foot">
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos consequuntur deleniti maxime alias
-        aliquid vel ratione, distinctio inventore a tenetur quidem pariatur, in dolore ab? Asperiores commodi aperiam
-        nulla incidunt? em ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos consequuntur deleniti maxime alias
-        aliquid vel ratione, distinctio inventore a tenetur quidem pariatur, in dolore ab? Asperiores commodi aperiam
-        nulla incidunt
-      </p>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+      <label class="form-check-label" for="flexRadioDefault2">
+        CASADO
+      </label>
     </div>
-    <div class="redes">
-      <p class="titulo">INFO DE CONTACTO</p>
-      <ul>
-        <li><a href="https://www.facebbok.com">FACEBOOK</a></li>
-        <li><a href="https://www.instagram.com">INSTAGRAM</a></li>
-        <li><a href="mailto:argentinacampeon@gmail.com">argentinacampeon@gmail.com</a></li>
-        <li><span>3243424323</span>
-      </ul>
-    </div>
-  </footer>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+      <label class="form-check-label" for="flexRadioDefault2">
+        VIUDO
+      </label>
+      <div>
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+          </div>
+        </div>
+        <fieldset>
+          <legend>Dejenos su opinión</legend>
+          <label for="comentario">COMENTARIO</label>
+          <textarea name="comentario" id="comentario" cols="100" rows="10"></textarea>
+        </fieldset>
+        <div class="boton">
+          <button type="submit">ENVIAR</button>
+          <button type="reset">LIMPIAR</button>
+        </div>
+      </div>
+      </form>
+      <!--FOOTER-->
+      <footer>
+        <!--container-->
+        <div class="container">
+          <!--row-->
+          <div class="row">
+            <div class="col-12 col-md-4 col-lg-4">
+              <div class="fo">
+                <p class="titulo">LINKS DE INTERÉS</p>
+                <ul>
+                  <li><a target="_blank"
+                      href="https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/qatar2022">FIFA</a>
+                  </li>
+                  <li><a target="_blank" href="https://www.promiedos.com.ar/mundial">PROMIEDO</a></li>
+                  <li><a target="_blank" href="https://www.tycsports.com/mundial/fixture.html">TYC SPORTS</a></li>
+                  <li><a target="_blank" href="https://es.wikipedia.org/wiki/Catar">WIKI CATAR</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4">
+              <div class="newsletter">
+                <div class="titleNews">
+                  <h2>RECIBE NUESTRAS NOTICIAS TODOS LOS MESES</h2>
+                </div>
+                <div class="form">
+                  <label for="email">EMAIL:</label>
+                  <input type="email" id="email" required>
+                  <button type="submit">ENVIAR</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4">
+              <div class="redes">
+                <p class="titulo">INFO DE CONTACTO</p>
+                <ul>
+                  <li><a href="https://www.facebbok.com">FACEBOOK</a></li>
+                  <li><a href="https://www.instagram.com">INSTAGRAM</a></li>
+                  <li><a href="mailto:campeon@gmail.com">campeon@gmail.com</a></li>
+                  <li><span>3243424323</span>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
