@@ -8,6 +8,38 @@ body {
   background-color: rgb(128, 159, 247);
 }
 
+/* GRID ITEM HEADER */
+header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+header .enlaces:hover {
+  background-color: cornflowerblue;
+  color: white;
+}
+header .enlaces:visited {
+  background-color: black;
+}
+header .logo {
+  width: 14%;
+  height: 100%;
+}
+header .nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+header .nav ul li {
+  list-style: none;
+  padding-left: 15%;
+  padding-right: 15px;
+}
+header .menuHamburguesa {
+  display: none;
+}
+
 /* GRID CONTAINER */
 .containerGrid {
   display: grid;
@@ -274,6 +306,109 @@ footer .redes {
 footer li {
   padding-top: 3%;
   list-style: none;
+}
+
+/* TABLET menor 1024px */
+@media screen and (max-width: 1023px) {
+  .containerGrid {
+    grid-template-rows: auto auto auto auto;
+  }
+  .nav ul li {
+    list-style: none;
+  }
+  .nav ul li .menuHamburguesa {
+    display: block;
+    color: black;
+    height: 100%;
+    width: 5%;
+    margin-right: 10px;
+  }
+  .menuHamburguesa {
+    display: block;
+    color: black;
+    height: 100%;
+    width: 5%;
+    margin-right: 10px;
+  }
+  .section1 .banner {
+    width: 100%;
+    height: 309px;
+  }
+  .section1 h1 {
+    background-color: white;
+    font-family: coopperplate;
+    text-align: center;
+    font-size: 40px;
+    color: blue;
+    padding-top: 2px;
+  }
+  .section2 {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  .section2 #cuadro2 {
+    padding-top: 2px;
+    padding-left: 2px;
+    text-align: center;
+  }
+  footer {
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .fo {
+    font-size: 90%;
+    padding-right: 3px;
+    align-items: center;
+    width: 100%;
+  }
+  footer .fo ul li {
+    padding-top: 10%;
+  }
+  footer .newsletter {
+    margin-top: 20px;
+    font-size: 90%;
+    align-items: center;
+    width: 100%;
+  }
+  footer .form {
+    align-items: center;
+    width: 100%;
+  }
+  footer .redes {
+    margin-left: 3%;
+    margin-top: 20px;
+    font-size: 90%;
+    align-items: center;
+    width: 100%;
+  }
+  footer .redes li {
+    margin-left: 15%;
+    font-size: 90%;
+    padding-top: 8%;
+  }
+}
+/* MOBILE menor 768px */
+@media screen and (max-width: 768px) {
+  .nav ul li {
+    display: none;
+  }
+  .logo {
+    padding-left: 2px;
+    height: 100%;
+  }
+  .menuHamburguesa {
+    display: block;
+    color: black;
+    height: 100%;
+    width: 5%;
+    margin-right: 10px;
+  }
+  .section1 .banner {
+    width: 100%;
+    height: 269px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
