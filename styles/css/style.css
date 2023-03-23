@@ -56,38 +56,6 @@ header .menuHamburguesa {
   color: white;
 }
 
-/* GRID ITEM HEADER */
-header {
-  background-color: white;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  align-items: center;
-}
-header .enlaces:hover {
-  background-color: cornflowerblue;
-  color: white;
-}
-header .enlaces:visited {
-  background-color: black;
-}
-header .logo {
-  width: 14%;
-  height: 100%;
-}
-header .nav ul {
-  display: flex;
-  justify-content: flex-end;
-}
-header .nav ul li {
-  list-style: none;
-  padding-left: 15%;
-  padding-right: 15px;
-}
-header .menuHamburguesa {
-  display: none;
-}
-
 /* TABLET menor 1024px */
 @media screen and (max-width: 1023px) {
   .containerGrid {
@@ -96,14 +64,7 @@ header .menuHamburguesa {
   .nav ul li {
     list-style: none;
   }
-  .nav ul li .menuHamburguesa {
-    display: block;
-    color: black;
-    height: 100%;
-    width: 5%;
-    margin-right: 10px;
-  }
-  .menuHamburguesa {
+  header .menuHamburguesa {
     display: block;
     color: black;
     height: 100%;
@@ -316,14 +277,7 @@ footer li {
   .nav ul li {
     list-style: none;
   }
-  .nav ul li .menuHamburguesa {
-    display: block;
-    color: black;
-    height: 100%;
-    width: 5%;
-    margin-right: 10px;
-  }
-  .menuHamburguesa {
+  header .menuHamburguesa {
     display: block;
     color: black;
     height: 100%;

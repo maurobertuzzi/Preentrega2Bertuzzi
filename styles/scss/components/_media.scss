@@ -7,16 +7,9 @@
 
     .nav ul li {
         list-style: none;
-        .menuHamburguesa {
-            display: block;
-            color: black;
-            height: 100%;
-            width: 5%;
-            margin-right: 10px;
-        }
     }
 
-    .menuHamburguesa {
+    header .menuHamburguesa {
         display: block;
         color: black;
         height: 100%;
