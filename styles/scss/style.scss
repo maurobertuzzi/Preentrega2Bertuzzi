@@ -1,23 +1,6 @@
 @import "./components/reset";
 @import "./components/header";
-
-/* GRID CONTAINER */
-.containerGrid {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 100px auto auto auto;
-    gap: 5px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.containerGrid>* {
-    border: solid 1px black;
-    color: white;
-}
-
 @import "./components/media";
 @import "./components/main";
 @import "./components/footer";
-@import "./components/media";
+

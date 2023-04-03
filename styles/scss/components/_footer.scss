@@ -1,21 +1,18 @@
-/* GRID ITEM FOOTER*/
 footer {
-    display: flex;
-    background-color: rgb(165, 164, 164);
+    background-color: orange (123, 213, 248);
     .fo {
         display: flex;
         flex-direction: column;
-        padding-top: 1%;
+        padding-top: 1%;    
         width: 25%;
+        .titulo {
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 1%;
+        }
     }
-    .titulo {
-        color: black;
-        font-family: Arial, Helvetica, sans-serif;
-        padding-top: 1%;
-        
-    }
+
     .newsletter {
-        padding-top: 1%;
         color: black;
         text-align: center;
         display: flex;

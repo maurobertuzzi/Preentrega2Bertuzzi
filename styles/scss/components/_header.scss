@@ -1,37 +1,21 @@
-/* GRID ITEM HEADER */
 header {
     background-color: white;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    align-items: center;
+    width: 100%;
 
-    .enlaces:hover {
-        background-color: cornflowerblue;
-        color: white;
+    nav ul li a {
+        background-color: white;
+        transition: background-color .5s;
     }
 
-    .enlaces:visited {
-        background-color: black;
+    nav ul li a:hover {
+        background-color: rgb(111, 132, 226);
     }
+}
 
-    .logo {
-        width: 14%;
-        height: 100%;
-    }
+.logo {
+    width: 100px;
+}
 
-    .nav ul {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .nav ul li {
-        list-style: none;
-        padding-left: 15%;
-        padding-right: 15px;
-    }
-
-    .menuHamburguesa {
-        display: none;
-    }
+.navbar-collapse {
+    flex-grow: 0;
 }

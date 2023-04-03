@@ -1,22 +1,6 @@
 /* TABLET menor 1024px */
 @media screen and (max-width: 1023px) {
 
-    .containerGrid {
-        grid-template-rows: auto auto auto auto;
-    }
-
-    .nav ul li {
-        list-style: none;
-    }
-
-    header .menuHamburguesa {
-        display: block;
-        color: black;
-        height: 100%;
-        width: 5%;
-        margin-right: 10px;
-    }
-
     .section1 {
         .banner {
             width: 100%;
@@ -43,8 +27,13 @@
             padding-left: 2px;
             text-align: center;
         }
-    }
 
+        .iframe{
+            height: auto;
+            width: auto;
+        }
+    }
+    
     footer {
         font-size: large;
         display: flex;
@@ -92,23 +81,6 @@
 
     /* MOBILE menor 768px */
     @media screen and (max-width: 768px) {
-
-        .nav ul li{
-            display: none;
-        }
-
-        .logo {
-            padding-left: 2px;
-            height: 100%;
-        }
-
-        .menuHamburguesa {
-            display: block;
-            color: black;
-            height: 100%;
-            width: 5%;
-            margin-right: 10px;
-        }
 
         .section1 .banner {
             width: 100%;
